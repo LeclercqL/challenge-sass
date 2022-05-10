@@ -1,0 +1,36 @@
+/* Gère le css globales du site */
+body {
+    font-family: $font-body;
+    font-size: $font-body-size;
+    line-height: 1.5; /* en général entre 1.4 et 1.6 pour avoir une line-height correct */
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow-x: hidden; /* On empeche le scroll horizontale dans la page */
+    /* Attention overflow-x hidden sans la propriété ci-dessous gêne le scroll sur iphone et ipad */
+    -webkit-overflow-scrolling: touch; /* https://developer.mozilla.org/fr/docs/Web/CSS/-webkit-overflow-scrolling */
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+main {
+    padding: 0 1em;
+}
+
+article {
+    @include row-flex(wrap);
+}

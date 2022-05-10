@@ -1,0 +1,28 @@
+.messages {
+    padding: $spacing;
+}
+
+.alert {
+    border: 1px solid $border-color;
+    padding: $spacing;
+    color: #fff;
+}
+
+.alert-success {
+    @extend .alert;
+    background-color: $alert-success;
+}
+
+.alert-error {
+    @extend .alert;
+    background-color: $alert-error;
+
+    &:hover {
+        background-color: $alert-success;
+    }
+}
+
+.alert-warning {
+    @extend .alert;
+    background-color: $alert-warning;
+}

@@ -1,0 +1,38 @@
+/* Contiendra tous les sélecteurs des éléments typographiques (titre, blockquote, class spécifique d'un titre etc) */
+html {
+    font-size: 62.5%;
+}
+
+strong {
+    font-weight: bold;
+}
+
+small {
+    font-size: 80%;
+}
+
+em {
+    font-style: italic;
+}
+
+h1,
+h2,
+h3 {
+    color: $title-color;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight : bold;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.65rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+    margin-bottom: 0px;
+}

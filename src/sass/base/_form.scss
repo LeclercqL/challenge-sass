@@ -1,0 +1,42 @@
+/* Contiendra tous les sélecteurs des champs de formulaire (input, button, textarea, select, radio, etc.) */
+input[type="email"] {
+    padding : 1rem;
+    border: 1px solid $border-color;
+
+    /* Style des valeurs affichés si le champ est vide */
+    &::placeholder {
+       color : lighten(black,10);
+    }
+
+    &:focus {
+        border-color : $link-color;
+    }
+}
+
+textarea {
+    padding : 1rem;
+    border: 1px solid $border-color;
+}
+
+input[type="submit"],
+button {
+    padding : 1rem;
+    border: 1px solid $border-color;
+}
+
+select {
+    padding : 1rem;
+    border: 1px solid $border-color;
+}
+
+input[type="checkbox"] {
+    &:checked {
+        
+    }
+}
+
+input[type="radio"] {
+    &:checked {
+
+    }
+}

@@ -1,0 +1,19 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/reset"; /* le reset toujours en premier */
+@import "base/grid";
+@import "base/form";
+@import "base/typography";
+
+/*le dossier vendor sert à ajouter les css des librairies externes*/
+//exemple : @import "vendor/bxslider";
+
+@import "components/alert";
+@import "components/code";
+@import "components/section";
+
+@import "layout/common"; /* le common toujours en premier */
+@import "layout/header";
+@import "layout/footer";
+@import "layout/nav";
