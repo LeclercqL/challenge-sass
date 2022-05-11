@@ -72,7 +72,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -84,29 +84,27 @@ table {
 /* le reset toujours en premier */
 /* Dédié à la grille du site */
 /* Contiendra tous les sélecteurs des champs de formulaire (input, button, textarea, select, radio, etc.) */
-input[type="email"] {
+input[type=email] {
   padding: 1rem;
   border: 1px solid #8C8C8C;
   /* Style des valeurs affichés si le champ est vide */
 }
-
-input[type="email"]::-webkit-input-placeholder {
+input[type=email]::-webkit-input-placeholder {
   color: #1a1a1a;
 }
-
-input[type="email"]:-ms-input-placeholder {
+input[type=email]::-moz-placeholder {
   color: #1a1a1a;
 }
-
-input[type="email"]::-ms-input-placeholder {
+input[type=email]:-ms-input-placeholder {
   color: #1a1a1a;
 }
-
-input[type="email"]::placeholder {
+input[type=email]::-ms-input-placeholder {
   color: #1a1a1a;
 }
-
-input[type="email"]:focus {
+input[type=email]::placeholder {
+  color: #1a1a1a;
+}
+input[type=email]:focus {
   border-color: #9c225f;
 }
 
@@ -115,7 +113,7 @@ textarea {
   border: 1px solid #8C8C8C;
 }
 
-input[type="submit"],
+input[type=submit],
 button {
   padding: 1rem;
   border: 1px solid #8C8C8C;
@@ -166,30 +164,48 @@ h3 {
 }
 
 /*le dossier vendor sert à ajouter les css des librairies externes*/
+.adv-item:nth-child(1) {
+  background-color: #871d52;
+}
+.adv-item:nth-child(2) {
+  background-color: #721946;
+}
+.adv-item:nth-child(3) {
+  background-color: #5d1439;
+}
+.adv-item:nth-child(4) {
+  background-color: #48102c;
+}
+.adv-item:nth-child(5) {
+  background-color: #330b1f;
+}
+.adv-item:nth-child(6) {
+  background-color: #1e0713;
+}
+
 .messages {
   padding: 1.6rem;
 }
 
-.alert, .alert-success, .alert-error, .alert-warning {
+.alert, .alert-warning, .alert-error, .alert-success {
   border: 1px solid #8C8C8C;
   padding: 1.6rem;
   color: #fff;
 }
 
 .alert-success {
-  background-color: #26b826;
+  background-color: rgb(38, 184, 38);
 }
 
 .alert-error {
-  background-color: #e94343;
+  background-color: rgb(233, 67, 67);
 }
-
 .alert-error:hover {
-  background-color: #26b826;
+  background-color: rgb(38, 184, 38);
 }
 
 .alert-warning {
-  background-color: #ff7300;
+  background-color: rgb(255, 115, 0);
 }
 
 code {
@@ -207,15 +223,12 @@ code {
   display: block;
   word-wrap: break-word;
 }
-
 code.before, code.after {
   width: 40%;
 }
-
 code.before {
   float: left;
 }
-
 code.after {
   float: right;
 }
@@ -236,7 +249,6 @@ section {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
 section--large {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
@@ -272,7 +284,6 @@ a {
   color: #9c225f;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
@@ -300,5 +311,4 @@ footer h3 {
   padding: 3.2rem;
 }
 
-/* Gère le css lié à la navigation principale */
-/*# sourceMappingURL=style.css.map */
+/* Gère le css lié à la navigation principale *//*# sourceMappingURL=style.css.map */

@@ -1,0 +1,7 @@
+.adv-item {
+  @for $i from 1 through 6 {
+     &:nth-child( #{$i} ) {
+       background-color: darken($link-color, (5 * $i));
+     }
+   }
+}
